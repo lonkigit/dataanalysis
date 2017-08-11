@@ -14,3 +14,9 @@ print("********************************")
 import pandas as pd
 fiddy_states = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states')
 print(fiddy_states[0])
+print("********************************")
+
+
+for abbv in fiddy_states[0][0][1:]:
+    # print(abbv)
+    print("FMAC/HPI_%s" % str(abbv))
